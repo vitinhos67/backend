@@ -14,13 +14,11 @@ export function calcularPreco(curso: CursoComDesconto): number {
 
     switch (curso.nivel) {
         case 'BASICO':
-            // Sem alteração no preço
             break;
         case 'INTERMEDIARIO':
-            preco += (preco * 0.05); // Acrescenta 5% ao valor final
-            break;
+            preco += (preco * 0.05);
         case 'AVANCADO':
-            preco += (preco * 0.10); // Acrescenta 10% ao valor final
+            preco += (preco * 0.10);
             break;
     }
 

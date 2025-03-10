@@ -29,7 +29,6 @@ function calcularPrecoCurso(curso: CursoComDesconto): number {
     }
 }
 
-// Exemplo de uso
 const curso: CursoComDesconto = {
     nome: "Curso de TypeScript",
     duracaoHoras: 40,
