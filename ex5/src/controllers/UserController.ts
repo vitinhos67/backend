@@ -1,15 +1,10 @@
 import { Request, Response } from "express";
 import { User } from "../models/User";
-import { add, getById, remove } from "../routes/UserService";
+import { add, get, getById, remove } from "../services/UserService";
 
 
 export function listUser(req: Request, res: Response): void {
-    const users: User[] = [
-        { id: 1, name: 'Alice', age: 20 },
-        { id: 2, name: 'Bob', age: 25 },
-        { id: 3, name: 'Charlie', age: 30 },
-    ];
-    res.json(users);
+    res.json(get());
 }
 
 export function getUser(req: Request, res: Response): void {

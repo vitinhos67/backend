@@ -20,3 +20,7 @@ export function remove(id: number): boolean {
     usuarios.splice(index);
     return true;
 }
+
+export function get(): User[] {
+    return usuarios;
+}
